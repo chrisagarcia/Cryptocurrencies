@@ -19,4 +19,15 @@ With an inflection point at 4, I use the KMeans model with 4 centroids to produc
 Results
 ---
 
-3D plotly scatter plot with colors representing KMeans clusters
+<a href="">3D plotly</a> scatter plot with colors representing KMeans clusters.
+<figure>
+    <img src="PC_1_2.png" />
+    <figcaption align="center">Cross-section showing points on Principle Components 1 & 2.</figcaption>
+</figure>
+
+Concetating the original, unstandardized CoinSupply and CoinsMined data with the KMeans cluster class data I create a new dataframe. Next, I fit a MinMax scaler to the data so that it would be easier to fit in a scatter plot.
+
+<figure>
+    <img src="supply_v_mined.png" />
+    <figcaption align="center">hvplot of Crypto Currency Supply vs Mined Coins with Color Applied According to KMeans Class.</figcaption>
+</figure>
